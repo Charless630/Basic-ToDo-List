@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from 'react'
 import './CSS/Todo.css'
+import { TodoItems } from './TodoItems';
 
 let count = 0;
 export const Todo = () => {
@@ -23,6 +24,9 @@ export const Todo = () => {
                 <div onClick={add} className='todo-add-button'>Add</div>
             </div>
             <div className="todo-list"></div>
+            {todos.map((item, index) => {
+                return <TodoItems key={index} no={item.no} display={item.display} text={item.text}/>
+            })}
         </div>
     )
 }
