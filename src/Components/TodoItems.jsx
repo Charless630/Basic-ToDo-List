@@ -1,7 +1,7 @@
 import './CSS/TodoItems.css'
-import tick from '../Assets/tick.png'
-import not_tick from '../Assets/not_tick.png'
-import cross from '../Assets/cross.png'
+import tick from '../Components/Assets/tick.png'
+import not_tick from '../Components/Assets/not_tick.png'
+import cross from '../Components/Assets/cross.png'
 
 export const TodoItems = ({no, display, text, setTodos}) => {
 
