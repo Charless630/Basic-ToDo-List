@@ -11,7 +11,7 @@ export const TodoItems = ({no, display, text}) => {
             <img src={tick} alt="" />
             <div className="todoitems-text">{text}</div>
         </div>
-        <img src={cross} alt="" />
+        <img className='todoitems-crossicon' src={cross} alt="" />
     </div>
   )
 }
